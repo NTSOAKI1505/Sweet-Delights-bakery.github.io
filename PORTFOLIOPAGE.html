@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights Bakery</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center
+    list-style: none;
+    background-color: coral;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #825e11;
+}
+        h1, h2 {
+            margin: 10px 0;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .slider {
+            overflow: hidden;
+            width: 100%;
+            height: 300px;word-wrap: initial;
+            position: relative;
+        }
+        .slide-container {
+            display: flex;
+            width: 400%; /* Adjust based on number of slides */
+            animation: slide 30s infinite;
+        }
+        .slide {
+            width: 100%; /* Each slide takes full width */
+            transition: transform 1.5s ease;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(0); }
+            30% { transform: translateX(-100%); }
+            55% { transform: translateX(-100%); }
+            60% { transform: translateX(-200%); }
+            85% { transform: translateX(-200%); }
+            90% { transform: translateX(-300%); }
+            100% { transform: translateX(-300%); }
+        }
+        footer {
+            margin-top: 20px;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Sweet Delights Bakery</h1>
+        <nav>
+            <ul>
+                <li><a href="HOMEPAGE.html">HOME</a></li>
+                <li><a href="PORTFOLIOPAGE.html">PORTFOLIO</a></li>
+                <li><a href="ABOUTUSPAGE.html">ABOUT</a></li>
+                <li><a href="CONTACT.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Business Logos Section -->
+   <!-- Business Logos Section -->
+<section style="text-align: center; padding: 20px;">
+    <h2>Our Partners</h2>
+    <div style="display: flex; justify-content: center;">
+        <img src="image44.jpg" alt="Shoprite Logo" style="margin: 0 15px; max-width: 100px;">
+        <img src="image43.png" alt="Checkers Logo" style="margin: 0 15px; max-width: 100px;">
+        <img src="image42.jpg" alt="Pick n Pay Logo" style="margin: 0 15px; max-width: 100px;">
+        <img src="image45.jpeg" alt="Woolworths Logo" style="margin: 0 15px; max-width: 100px;">
+    </div>
+</section>
+
+<!-- Hero Section -->
+<section class="hero-slider">
+    <h2>Welcome to Sweet Delights Bakery</h2>
+    <p>Your one-stop shop for all things delicious and delightful.</p>
+    <div class="slider">
+        <div class="slide-container">
+            <div class="slide"><img src="image36.jpeg" alt="Delicious bakery items"></div>
+            <div class="slide"><img src="image37.jpeg" alt="Another delicious item"></div> <!-- Add more slides as needed -->
+            <div class="slide"><img src="image38.jpeg" alt="Another delicious item"></div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer a range of services to meet your needs:</p>
+        <ul>
+            <li>Custom cakes for all occasions</li>
+            <li>Freshly baked pastries and breads</li>
+            <li>Corporate catering</li>
+            <li>Baking classes and workshops</li>
+        </ul>
+        <!-- Services image -->
+        <img src="image48.jpeg" alt="Our delicious offerings">
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2022 Sweet Delights Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* Change to your image path */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('image37.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: coral;
+}
+
+/* Header */
+header {
+    background-color: #f7c8d8;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center
+    list-style: none;
+    background-color: coral;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: darkorange;
+}
+
+/* Welcome Section */
+#welcome {
+    padding: 20px;
+    text-align: left;
+}
+
+/* Featured Products */
+#featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: right;
+    padding: 20px;
+}
+
+.product {
+    flex: 1 1 300px; /* Each product takes up 1/3 width minimum on large screens, 100% width on small screens */
+    max-width: 300px;
+    text-align: right;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    border-color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: overflow;
+    }
+    
+    #featured-products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        max-width: 100%;
+    }
+}
+
